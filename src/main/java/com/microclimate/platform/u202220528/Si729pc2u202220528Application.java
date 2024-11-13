@@ -21,7 +21,7 @@ public class Si729pc2u202220528Application {
             return new WebMvcConfigurer() {
                 @Override
                 public void addCorsMappings(CorsRegistry registry) {
-                    registry.addMapping("/**").allowedOrigins("*");
+                    registry.addMapping("/**").allowedOrigins("HEAD", "GET", "POST", "PUT", "DELETE", "PATCH" );
                 }
             };
         }
